@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+
+/* Tablet Devices */
+  @media (max-width: 1024px) {
+    font-size: 14px;
+    padding: 15px;
+  }
+/* Mobile Devices */
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 10px;
+  }
+/* Large Screens */
+  @media (min-width: 1025px) {
+    font-size: 16px;
+    padding: 20px;
+  } 
+}
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  background: #333;
+  padding: 15px 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-list a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Header */
+.header {
+  padding: 50px 20px;
+  background: #007bff;
+  color: white;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+/* Content */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer li {
+  margin: 0 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-list {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .nav-list li {
+      margin: 10px 0;
+  }
+
+  .header h1 {
+      font-size: 2rem;
+  }
+
+  .header p {
+      font-size: 1rem;
+  }
+
+  .content {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .footer ul {
+      flex-direction: column;
+      text-align: center;
+  }
+}
+
+/* Mobile Phones (Small Screens) */
+@media screen and (max-width: 480px) {
+  .header h1 {
+      font-size: 1.8rem;
+  }
+
+  .header p {
+      font-size: 0.9rem;
+  }
+
+  .content {
+      width: 95%;
+      font-size: 14px;
+  }
+
+  .footer {
+      font-size: 14px;
+  }
+}
